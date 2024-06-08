@@ -1,0 +1,25 @@
+int greenLED = 11; // Define o pino do LED verde
+int redLED = 10;   // Define o pino do LED vermelho
+
+void setup() {
+  pinMode(greenLED, OUTPUT); // Configura o pino do LED verde como saída
+  pinMode(redLED, OUTPUT);   // Configura o pino do LED vermelho como saída
+  Serial.begin(9600);        // Inicia a comunicação serial
+}
+
+void loop() {
+  if (Serial.available() > 0) { // Verifica se há dados disponíveis na porta serial
+    char command = Serial.read(); // Lê o comando recebido
+
+    if (command == 'G') { // Se o comando for 'G' (ligar LED verde)
+      digitalWrite(greenLED, HIGH); // Liga o LED verde
+      digitalWrite(redLED, LOW);    // Desliga o LED vermelho
+    } else if (command == 'R') { // Se o comando for 'R' (ligar LED vermelho)
+      digitalWrite(greenLED, LOW);  // Desliga o LED verde
+      digitalWrite(redLED, HIGH);   // Liga o LED vermelho
+    } else if (command == 'N') { // Se o comando for 'N' (desligar ambos os LEDs)
+      digitalWrite(greenLED, LOW);  // Desliga o LED verde
+      digitalWrite(redLED, LOW);    // Desliga o LED vermelho
+    }
+  }
+}
