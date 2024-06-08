@@ -1,0 +1,4 @@
+0 Nada
+1 Capacete
+2 Concha
+3 Capacete e Concha
