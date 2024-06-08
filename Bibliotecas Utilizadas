@@ -1,0 +1,6 @@
+A seguir será descrito quais as bibliotecas utilizadas na programação do projeto e DEVEM ser baixadas no código em caso replicação do projeto:
+
+    - TensorFlow -> Esta biblioteca permite que ocorra o Machine Learning em questão, ou seja, faz com que a máquina seja treinada.
+    - NumPy -> A NumPy é uma biblioteca que adiciona suporte para arrays e matrizes multidimensionais, além de uma coleção de funções matemáticas para operar nesses arrays de maneira eficiente.
+    - OpenCV-Python ->  O OpenCV é uma biblioteca de visão computacional e aprendizado de máquina que fornece uma ampla gama de funções para processamento de imagens e vídeos, neste projeto permite que abra a câmera da máquina na qual você estará utilizando e possibilite que o Machine Learning ocorra.
+    - PySerial -> PySerial é uma biblioteca Python que facilita a comunicação com portas seriais (COM ports no Windows ou /dev/ttyS* no Linux) e ela permite neste projeto que ocorra a comunicação e relação com a placa e programação do Arduino no projeto.
